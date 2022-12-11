@@ -10,77 +10,8 @@ $cart = (isset($_SESSION['cart']))?$_SESSION['cart']:[];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/cart.css">
     <title>Lifestyle Store</title>
-    <style>
-    body {
-        margin: 0px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 14px;
-    }
-
-    #noidung {
-        width: auto;
-        height: 100%;
-        background-color: white;
-    }
-
-    .bang {
-        margin-left: 150px;
-    }
-
-    .back {
-        margin-top: 50px;
-        margin-left: 150px;
-    }
-
-    td,
-    th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-    }
-
-    tr:nth-child(even) {
-        background-color: #dddddd;
-    }
-
-    #footer {
-        width: 100%;
-        height: 50px;
-        background-color: black;
-        color: white;
-        text-align: center;
-        padding-top: 5px;
-    }
-
-    .button {
-        border: none;
-        color: white;
-        padding: 16px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-    }
-
-    .button1 {
-        background-color: white;
-        color: black;
-        border: 2px solid #4CAF50;
-    }
-
-    .button1:hover {
-        background-color: #4CAF50;
-        color: white;
-    }
-
-    h1 {
-        color: red;
-    }
-    </style>
 </head>
 
 <body>
@@ -106,7 +37,7 @@ $cart = (isset($_SESSION['cart']))?$_SESSION['cart']:[];
                     <tr>
                         <td><?php  echo $key ?></td>
                         <td><?php echo $row['tensp'] ?></td>
-                        <td><img style="width: 100px;" src="img/<?php echo $row['image'];?>"></td>
+                        <td><img style="width: 100px;" src="./img/<?php echo $row['image'];?>"></td>
                         <td>
                             <form action="democart.php">
                                 <input type="hidden" name="action" value='update'>

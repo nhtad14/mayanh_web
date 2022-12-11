@@ -6,33 +6,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/itemsid.css">
     <title>Lifestyle Store</title>
-    <style>
-    body {
-        margin: 0px;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 14px;
-    }
-
-    #noidung {
-        width: auto;
-        height: 480px;
-        background-color: white;
-        padding-top: 50px;
-    }
-
-    .hienthi {
-        width: 1200px;
-        height: 300px;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 10px;
-        padding-left: 70px;
-        margin-left: 150px;
-        text-align: center;
-        padding-top: 50px;
-    }
-    </style>
 </head>
 
 <body>
